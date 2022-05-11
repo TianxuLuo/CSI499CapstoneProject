@@ -1,0 +1,317 @@
+/* Register User */ 
+{
+	"length": 168,
+	"request": {
+		"func_name": "register_user",
+		"arguments": {
+			"username": "cloudblaze",
+			"password": "698d51a19d8a121ce581499d7b701668"
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 124,
+	"response": {
+		"is_success": true,
+		"message": "Register user successfully.",
+		"returned_value": {}
+	}
+}
+// Response(Failure):
+{
+	"length": 119,
+	"response": {
+		"is_success": false,
+		"message": "Username is exists.",
+		"returned_value": {}
+	}
+}
+
+
+/* Login */ 
+{
+	"length": 160,
+	"request": {
+		"func_name": "login",
+		"arguments": {
+			"username": "cloudblaze",
+			"password": "698d51a19d8a121ce581499d7b701668"
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 239,
+	"response": {
+		"is_success": true,
+		"message": "Login successfully.",
+		"returned_value": {
+			"token_id": "51a7fe78-bff5-11ec-a1bd-47dcc48b47c8",
+			"token_expiry_time": "2022-04-25 03:21:03.001106518 +08:00"
+		}
+	}
+}
+// Response(Failure):
+{
+	"length": 132,
+	"response": {
+		"is_success": false,
+		"message": "Username or password is invalid.",
+		"returned_value": {}
+	}
+}
+
+
+/* Modify Password */ 
+{
+	"length": 197,
+	"request": {
+		"func_name": "modify_password",
+		"arguments": {
+			"token_id": "51a7fe78-bff5-11ec-a1bd-47dcc48b47c8",
+			"old_password": "111",
+			"new_password": "222"
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 128,
+	"response": {
+		"is_success": true,
+		"message": "Modify password successfully.",
+		"returned_value": {}
+	}
+}
+// Response(Failure):
+{
+	"length": 124,
+	"response": {
+		"is_success": false,
+		"message": "Old password is invalid.",
+		"returned_value": {}
+	}
+}
+
+
+/* Logout */ 
+{
+	"length": 136,
+	"request": {
+		"func_name": "logout",
+		"arguments": {
+			"token_id": "51a7fe78-bff5-11ec-a1bd-47dcc48b47c8"
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 128,
+	"response": {
+		"is_success": true,
+		"message": "Logout successfully.",
+		"returned_value": {}
+	}
+}
+// Response(Failure):
+{
+	"length": 136,
+	"response": {
+		"is_success": false,
+		"message": "An error has occurred on the server.",
+		"returned_value": {}
+	}
+}
+
+
+/* Insert Key Event Data */ 
+{
+	"length": 661,
+	"request": {
+		"func_name": "insert_key_event_data",
+		"arguments": {
+			"token_id": "51a7fe78-bff5-11ec-a1bd-47dcc48b47c8",
+			"event_data_list": [{
+				"id": "290C6962-C05D-4551-2F73-1EF256511444",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"key_name": "Keyboard 'A' Key",
+				"status": 1
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511445",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"key_name": "Keyboard 'B' Key",
+				"status": 1
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511446",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"key_name": "Keyboard 'C' Key",
+				"status": 1
+			}]
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 134,
+	"response": {
+		"is_success": true,
+		"message": "Insert key event data successfully.",
+		"returned_value": {}
+	}
+}
+// Response(Failure):
+{
+	"length": 136,
+	"response": {
+		"is_success": false,
+		"message": "An error has occurred on the server.",
+		"returned_value": {}
+	}
+}
+
+
+/* Insert Mouse Moving Event Data */ 
+{
+	"length": 730,
+	"request": {
+		"func_name": "insert_mouse_moving_event_data",
+		"arguments": {
+			"token_id": "51a7fe78-bff5-11ec-a1bd-47dcc48b47c8",
+			"event_data_list": [{
+				"id": "290C6962-C05D-4551-2F73-1EF256511444",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"original_position": "(124, 182)",
+				"new_position": "(125, 183)"
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511445",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"original_position": "(126, 184)",
+				"new_position": "(127, 185)"
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511446",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"original_position": "(128, 186)",
+				"new_position": "(129, 187)"
+			}]
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 134,
+	"response": {
+		"is_success": true,
+		"message": "Insert mouse moving event data successfully.",
+		"returned_value": {}
+	}
+}
+// Response(Failure):
+{
+	"length": 136,
+	"response": {
+		"is_success": false,
+		"message": "An error has occurred on the server.",
+		"returned_value": {}
+	}
+}
+
+
+/* View Key Event Data */
+{
+	"length": 261,
+	"request": {
+		"func_name": "view_key_event_data",
+		"arguments": {
+			"token_id": "51a7fe78-bff5-11ec-a1bd-47dcc48b47c8",
+			"start_time": "2022-04-08 10:54:35.490104116 +08:00",
+			"end_time": "2022-04-08 10:59:35.490104116 +08:00"
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 675,
+	"response": {
+		"is_success": true,
+		"message": "View key event data successfully.",
+		"returned_value": {
+			"event_data_list_count": 3,
+			"event_data_list": [{
+				"id": "290C6962-C05D-4551-2F73-1EF256511444",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"key_name": "Keyboard 'A' Key",
+				"status": 1
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511445",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"key_name": "Keyboard 'A' Key",
+				"status": 1
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511446",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"key_name": "Keyboard 'A' Key",
+				"status": 1
+			}]
+		}
+	}
+}
+// Response(Failure):
+{
+	"length": 136,
+	"response": {
+		"is_success": false,
+		"message": "An error has occurred on the server.",
+		"returned_value": {}
+	}
+}
+
+
+/* View Mouse Moving Event Data */
+{
+	"length": 261,
+	"request": {
+		"func_name": "view_mouse_moving_event_data",
+		"arguments": {
+			"token_id": "51a7fe78-bff5-11ec-a1bd-47dcc48b47c8",
+			"start_time": "2022-04-08 10:54:35.490104116 +08:00",
+			"end_time": "2022-04-08 10:59:35.490104116 +08:00"
+		}
+	}
+}
+// Response(Success):
+{
+	"length": 735,
+	"response": {
+		"is_success": true,
+		"message": "View mouse moving event data successfully.",
+		"returned_value": {
+			"event_data_list_count": 3,
+			"event_data_list": [{
+				"id": "290C6962-C05D-4551-2F73-1EF256511444",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"original_position": "(124, 182)",
+				"new_position": "(124, 182)"
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511445",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"original_position": "(124, 182)",
+				"new_position": "(124, 182)"
+			}, {
+				"id": "290C6962-C05D-4551-2F73-1EF256511446",
+				"time": "2022-04-08 10:54:41.610301870 +08:00",
+				"original_position": "(124, 182)",
+				"new_position": "(124, 182)"
+			}]
+		}
+	}
+}
+// Response(Failure):
+{
+	"length": 136,
+	"response": {
+		"is_success": false,
+		"message": "An error has occurred on the server.",
+		"returned_value": {}
+	}
+}

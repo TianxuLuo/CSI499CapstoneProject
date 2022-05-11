@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+	<object class="GtkApplicationWindow" id="login_window">
+		<property name="title">Monitor Input Device -- User login</property>
+		<property name="resizable">False</property>
+		<child>
+			<object class="GtkBox">
+				<property name="margin-start">50</property>
+				<property name="margin-end">50</property>
+				<property name="margin-top">10</property>
+				<property name="margin-bottom">30</property>
+				<property name="orientation">vertical</property>
+				<child>
+					<object class="GtkLabel">
+						<property name="label">Monitor Input Device</property>
+						<property name="valign">center</property>
+						<property name="margin-top">30</property>
+						<attributes>
+							<attribute name="font-desc" value="Noto Serif CJK TC Heavy 30" />
+						</attributes>
+					</object>
+				</child>
+				<child>
+					<object class="GtkBox">
+						<property name="margin-start">60</property>
+						<property name="margin-end">60</property>
+						<property name="margin-top">30</property>
+						<property name="orientation">vertical</property>
+						<child>
+							<object class="GtkLabel">
+								<property name="label">User Name</property>
+								<property name="halign">start</property>
+								<attributes>
+									<attribute name="font-desc" value="Noto Serif CJK TC Heavy 18" />
+								</attributes>
+							</object>
+						</child>
+						<child>
+							<object class="GtkEntry">
+								<property name="placeholder-text">Please input user name.</property>
+								<property name="margin-top">10</property>
+							</object>
+						</child>
+						<child>
+							<object class="GtkLabel">
+								<property name="label">Password</property>
+								<property name="halign">start</property>
+								<property name="margin-top">15</property>
+								<attributes>
+									<attribute name="font-desc" value="Noto Serif CJK TC Heavy 18" />
+								</attributes>
+							</object>
+						</child>
+						<child>
+							<object class="GtkEntry">
+								<property name="placeholder-text">Please input password.</property>
+								<property name="visibility">False</property>
+								<property name="invisible-char">*</property>
+								<property name="margin-top">10</property>
+							</object>
+						</child>
+						<child>
+							<object class="GtkLabel">
+								<property name="label">Code</property>
+								<property name="halign">start</property>
+								<attributes>
+									<attribute name="font-desc" value="Noto Serif CJK TC Heavy 18" />
+								</attributes>
+							</object>
+						</child>
+						<child>
+							<object class="GtkEntry">
+								<property name="placeholder-text">Please input verification code.</property>
+								<property name="margin-top">10</property>
+							</object>
+						</child>
+						<child>
+							<object class="GtkBox">
+								<property name="margin-top">30</property>
+								<property name="homogeneous">True</property>
+								<child>
+									<object class="GtkButton" id="submit_button">
+										<property name="label">Login</property>
+										<property name="margin-start">50</property>
+										<property name="margin-end">50</property>
+									</object>
+								</child>
+								<child>
+									<object class="GtkButton" id="register_button">
+										<property name="label">Register</property>
+										<property name="margin-start">50</property>
+										<property name="margin-end">50</property>
+									</object>
+								</child>
+							</object>
+						</child>
+					</object>
+				</child>
+			</object>
+		</child>
+	</object>
+</interface>

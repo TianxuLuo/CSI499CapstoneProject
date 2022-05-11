@@ -1,0 +1,19 @@
+[package]
+name = "monitor-input-device-client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+gtk4 = { git = "https://github.com/gtk-rs/gtk4-rs.git", package = "gtk4" }
+pango = { git = "https://github.com/gtk-rs/gtk-rs-core.git", package = "pango" }
+gdk = { git = "https://github.com/gtk-rs/gtk4-rs.git", package = "gdk4" }
+gio = {git = "https://github.com/gtk-rs/gtk-rs-core", version = "0.16", features = ["v2_66"]}
+glib = {git = "https://github.com/gtk-rs/gtk-rs-core", version = "0.16", features = ["v2_66"]}
+device_query = "1.0.0"
+chrono = "0.4.19"
+sqlite = "0.26.0"
+guid-create = "0.2.0"
+json = "0.12.4"
+regex = "1.5.5"
